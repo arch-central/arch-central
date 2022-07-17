@@ -1,0 +1,16 @@
+#return-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+    border-radius: 5px;
+    
+    &:hover {
+        border-radius: 10px;
+        background-color: var(--primary);
+    }
+}

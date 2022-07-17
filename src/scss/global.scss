@@ -1,0 +1,64 @@
+* {
+    color: var(--font);
+    font-family: 'Sora';
+    transition: var(--defaultTrans);
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--background);
+    transition: none;
+}
+
+h3 {
+    font-size: 23px;
+    color: var(--primary);
+}
+
+hr {
+    border: 2px solid var(--primary);
+}
+
+#globalRoot {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    margin-top: 20px;
+    border-bottom: 4px dashed var(--primary);
+    border-top: 4px dashed var(--primary);
+
+    > span {
+        cursor: pointer;
+        
+        &:hover {
+            color: var(--primary);
+        }
+    }
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    
+    img {
+        object-fit: contain;
+        width: 300px;
+        height: 300px;
+    }
+
+    > div {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

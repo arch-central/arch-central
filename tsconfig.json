@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "global/*": ["private_modules/global/*"],
+      "database/*": ["src/database/*"],
+      "custom_elements/*": ["src/custom_elements/*"],
+    }
+  }
+}
