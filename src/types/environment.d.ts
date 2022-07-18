@@ -1,7 +1,7 @@
 declare global {
     namespace NodeJS {
       interface ProcessEnv {
-        API_HOST: string
+        REACT_APP_API_HOST: string
       }
     }
   }

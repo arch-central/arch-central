@@ -1,5 +1,6 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require("path")
+const Dotenv = require("dotenv-webpack")
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -61,6 +62,10 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin({
     template: "public/index.html",
     hash: true, // cache busting
-    filename: '../dist/index.html'
+    filename: '../dist/index.html',
+  }),
+  new Dotenv({
+    path: './.env', // Path to .env file (this is the default)
+    safe: true, // load .env.example (defaults to "false" which does not use dotenv-safe)
   })]
 }
