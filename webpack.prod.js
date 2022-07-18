@@ -46,7 +46,10 @@ module.exports = {
       global: path.resolve('private_modules/global'),
       database: path.resolve('src/database'),
       custom_elements: path.resolve('src/custom_elements'),
+    },
   },
+  optimization: {
+    usedExports: true,
   },
   devServer: {
     port: 3000,

@@ -1,9 +1,9 @@
-import Icon from "custom_elements/Icon";
 import { hot } from "react-hot-loader"
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
-import AboutPage from "./pages/AboutPage";
-import ArticlePage from "./pages/ArticlePage";
-import MainPage from "./pages/MainPage";
+import { Route, Routes, useNavigate } from "react-router-dom"
+import AboutPage from "./pages/AboutPage"
+import ArticlePage from "./pages/ArticlePage"
+import MainPage from "./pages/MainPage"
+import { BsGithub } from 'react-icons/bs/index'
 
 import './scss/global.scss'
 
@@ -28,7 +28,7 @@ const App = () => {
                 <Route path="about" element={<AboutPage/>}/>
             </Routes>
             <div onClick={() => window.open("https://github.com/arch-central/arch-central", '_blank', "noopener,noreferrer")} id="github-btn">
-                <Icon icon="BsGithub"/>
+                <BsGithub/>
             </div>
         </div>
     );

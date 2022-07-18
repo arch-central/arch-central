@@ -49,6 +49,9 @@ module.exports = {
       custom_elements: path.resolve('src/custom_elements'),
   },
   },
+  optimization: {
+    usedExports: true,
+  },
   devServer: {
     port: 3000,
     open: true,

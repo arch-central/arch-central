@@ -1,9 +1,9 @@
 import ArticleDispaly from "custom_elements/ArticleDispaly";
-import Icon from "custom_elements/Icon";
 import Article from "database/article";
 import RestHelper from "global/restHelper";
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { FiArrowLeft } from 'react-icons/fi/index'
 
 import './scss/article.scss'
 
@@ -28,7 +28,7 @@ const ArticlePage = () => {
     return (
         <div id="main-page">
             <div onClick={() => navegate('/')} id="return-btn">
-                <Icon icon="FiArrowLeft"/>
+                <FiArrowLeft/>
             </div>
             { state.article ? <ArticleDispaly article={state.article}/> :  <div className='warning'><span>{ state.loading ? "Loading..." : "Article not found!!!" }</span></div>}
         </div>
