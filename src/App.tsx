@@ -15,7 +15,7 @@ const App = () => {
                 <img src="/icon.png" onClick={() => navigate('/')}/>
                 <div>
                     <span>
-                        The open-source the arch centric blogpost
+                        The open-source and arch centric blogpost
                     </span>
                 </div>
             </div>
