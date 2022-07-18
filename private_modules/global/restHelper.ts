@@ -16,7 +16,7 @@ export interface RestHelperResponse<T> {
 
 export default class RestHelper {
 
-    static restData: RestHelperData = { host: "localhost", port: 3001, api: 1}
+    static restData: RestHelperData = { host: "localhost", port: 3000, api: 1}
     
     static SET = (host: string, port: number = 3000) => {
         this.restData.host = host

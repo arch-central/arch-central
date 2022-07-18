@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
+    "stats": "webpack --config webpack.prod.js --json > dist/stats.json",
     "start": "webpack-dev-server --config webpack.dev.js"
   },
   "devDependencies": {
