@@ -1,0 +1,33 @@
+#create-page {
+    display: flex;
+    flex-direction: column;
+
+    > #title, #title > input {
+        width: 100%;
+    }
+
+    > #image-wrapper {
+        width: calc(100% - 12px);
+        min-height: 400px;
+        margin: 10px 0px;
+        padding: 10px;
+        background-color: var(--primary);
+        cursor: pointer;
+
+        > img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        > #image-holder {
+            width: calc(100% - 20px);
+            height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed var(--background);
+            margin: 10px;
+            user-select: none;
+        }
+    }
+}

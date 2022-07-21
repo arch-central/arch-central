@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "stats": "webpack --config webpack.prod.js --json > dist/stats.json",
-    "start": "webpack-dev-server --config webpack.dev.js"
+    "dev": "webpack-dev-server --config webpack.dev.js"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
@@ -37,6 +37,7 @@
     "react-dom": "^18.2.0",
     "react-hot-loader": "^4.13.0",
     "react-icons": "^4.4.0",
+    "react-markdown": "^8.0.3",
     "react-router-dom": "6"
   }
 }

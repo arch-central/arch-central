@@ -6,6 +6,7 @@ import MainPage from "./pages/MainPage"
 import { BsGithub } from 'react-icons/bs/index'
 
 import './scss/global.scss'
+import CreatePostPage from "./pages/CreatePostPage"
 
 const App = () => {
     const navigate = useNavigate();
@@ -25,7 +26,8 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<MainPage/>}/>
                 <Route path="/:id" element={<ArticlePage/>}/>
-                <Route path="about" element={<AboutPage/>}/>
+                <Route path="/about" element={<AboutPage/>}/>
+                <Route path="/create" element={<CreatePostPage/>}/>
             </Routes>
             <div onClick={() => window.open("https://github.com/arch-central/arch-central", '_blank', "noopener,noreferrer")} id="github-btn">
                 <BsGithub/>
